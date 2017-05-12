@@ -22,11 +22,6 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * Displays homepage.
-     *
-     * @return string
-     */
     public function actionIndex()
     {
         Yii::$app->response->format = \yii\web\Response::FORMAT_HTML;
