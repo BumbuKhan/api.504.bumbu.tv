@@ -13,6 +13,18 @@ class LessonController extends ActiveController
         'collectionEnvelope' => 'items',
     ];
 
+    public function behaviors()
+    {
+        $behaviors = parent::behaviors();
+
+        // add CORS filter
+        $behaviors['corsFilter'] = [
+            'class' => \yii\filters\Cors::className(),
+        ];
+
+        return $behaviors;
+    }
+
     public function actions()
     {
         $actions = parent::actions();
