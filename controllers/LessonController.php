@@ -13,13 +13,15 @@ class LessonController extends ActiveController
         'collectionEnvelope' => 'items',
     ];
 
-    public function actions(){
+    public function actions()
+    {
         $actions = parent::actions();
         unset($actions['index']);
         return $actions;
     }
 
-    public function actionIndex(){
+    public function actionIndex()
+    {
         $activeData = new ActiveDataProvider([
             'query' => Lessons::find(),
             'pagination' => false
