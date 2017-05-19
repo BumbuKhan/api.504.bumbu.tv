@@ -10,7 +10,6 @@ class WordController extends ActiveController
     public $modelClass = 'app\models\Words';
     public $serializer = [
         'class' => 'yii\rest\Serializer',
-        'collectionEnvelope' => false,
     ];
 
     public function behaviors()
