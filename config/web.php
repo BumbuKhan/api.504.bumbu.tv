@@ -54,6 +54,8 @@ $config = [
                     'controller' => ['lesson', 'word'],
                     'except' => ['delete', 'create', 'update']
                 ],
+                'POST feed-back' => 'feed-back/add',
+                'GET,HEAD feed-back' => '',
             ],
         ],
     ],
