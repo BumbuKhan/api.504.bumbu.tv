@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 20 2017 г., 19:33
+-- Время создания: Май 20 2017 г., 20:47
 -- Версия сервера: 5.5.48
 -- Версия PHP: 5.6.19
 
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `feed_back` (
   `id` int(11) NOT NULL,
   `message` text NOT NULL,
   `phone_data` text NOT NULL,
-  `add_datetime` datetime NOT NULL
+  `add_datetime` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
