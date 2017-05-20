@@ -3,7 +3,6 @@ namespace app\controllers;
 
 use yii;
 use yii\rest\ActiveController;
-use yii\data\ActiveDataProvider;
 use app\models\FeedBack;
 
 class FeedBackController extends ActiveController
