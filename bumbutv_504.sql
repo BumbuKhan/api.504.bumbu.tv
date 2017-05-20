@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 12 2017 г., 22:32
+-- Время создания: Май 20 2017 г., 19:33
 -- Версия сервера: 5.5.48
 -- Версия PHP: 5.6.19
 
@@ -19,6 +19,19 @@ SET time_zone = "+00:00";
 --
 -- База данных: `bumbutv_504`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `feed_back`
+--
+
+CREATE TABLE IF NOT EXISTS `feed_back` (
+  `id` int(11) NOT NULL,
+  `message` text NOT NULL,
+  `phone_data` text NOT NULL,
+  `add_datetime` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -55,6 +68,12 @@ CREATE TABLE IF NOT EXISTS `words` (
 --
 
 --
+-- Индексы таблицы `feed_back`
+--
+ALTER TABLE `feed_back`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `lessons`
 --
 ALTER TABLE `lessons`
@@ -73,6 +92,11 @@ ALTER TABLE `words`
 -- AUTO_INCREMENT для сохранённых таблиц
 --
 
+--
+-- AUTO_INCREMENT для таблицы `feed_back`
+--
+ALTER TABLE `feed_back`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT для таблицы `lessons`
 --
