@@ -31,7 +31,10 @@ class ContentController extends Controller
     {
         $lessons = Content::getLessons();
 
-        return $this->render('lessons.php', ['lessons' => $lessons]);
+        return $this->render('lessons.php', [
+            'lessons' => $lessons,
+            'wordCount' => Content::getWordsCount()
+        ]);
     }
 
     public function actionViewLesson()

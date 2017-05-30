@@ -2,6 +2,36 @@
 use yii\helpers\Url;
 ?>
 
+
+<h3 style="margin-top: 0;">Progress</h3>
+<div class="row">
+    <div class="col-xs-6" style="text-align: center; padding: 8px 0; border: 1px #e0e0e0 solid; border-left: none">
+        <div id="circle">
+            <strong><?=ceil($wordCount/(12 * 42))?>%</strong>
+        </div>
+    </div>
+    <div class="col-xs-6" style="text-align: center; padding: 8px 0; border: 1px #e0e0e0 solid; border-right: none; border-left: none">
+        <div id="circle1">
+            <strong><?=$wordCount?>/504</strong>
+        </div>
+    </div>
+</div>
+<script>
+    $('#circle').circleProgress({
+        value: <?=$wordCount/(12 * 42)?>,
+        size: 100,
+        fill: { color: "#f4613c" },
+        lineCap: 'round'
+    });
+
+    $('#circle1').circleProgress({
+        value: <?=$wordCount/(504)?>,
+        size: 100,
+        fill: {color: "#65a7f8"},
+        lineCap: 'round'
+    });
+</script>
+
 <h3>Lessons</h3>
 
 <?php

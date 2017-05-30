@@ -16,3 +16,17 @@
 .word-examples li{
     margin-bottom: 5px;
 }
+
+#circle strong, #circle1 strong {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+}
+
+#circle1 strong{
+    font-size: 17px !important;
+}

@@ -1,9 +1,8 @@
 <?php
 use yii\helpers\Url;
-
 ?>
 
-    <h3>Words in <?= $lesson_data['lesson']['title'] ?></h3>
+    <h3>Words in <?= $lesson_data['lesson']['title'] ?> (<?=count($lesson_data['words'])?>)</h3>
 <?php
 if (Yii::$app->session->hasFlash('disclaimer')) {
     $disclaimer = Yii::$app->session->getFlash('disclaimer');

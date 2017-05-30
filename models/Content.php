@@ -82,4 +82,11 @@ class Content extends Model
     {
         return (1 == Yii::$app->db->createCommand()->update('words', $data, ['id' => $id])->execute());
     }
+
+    static public function getWordsCount()
+    {
+        $sql = "SELECT COUNT(id) AS words_count FROM words";
+
+        return Yii::$app->db->createCommand($sql)->queryScalar();
+    }
 }
