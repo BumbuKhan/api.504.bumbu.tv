@@ -7,7 +7,7 @@ use yii\helpers\Url;
 <div class="row">
     <div class="col-xs-6" style="text-align: center; padding: 8px 0; border: 1px #e0e0e0 solid; border-left: none">
         <div id="circle">
-            <strong><?= ceil($wordCount / (12 * 42)) ?>%</strong>
+            <strong><?=ceil($wordCount / (12 * 42) * 100)?>%</strong>
         </div>
     </div>
     <div class="col-xs-6"

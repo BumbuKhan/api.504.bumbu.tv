@@ -122,7 +122,7 @@ class ContentController extends Controller
     {
         $request = Yii::$app->request;
 
-        if($request->isPost){
+        if ($request->isPost) {
             $id = $request->post('word_id');
         } else {
             $id = $request->get('id');
@@ -226,5 +226,10 @@ class ContentController extends Controller
 
             $this->redirect($request->referrer);
         }
+    }
+
+    public function actionHelp()
+    {
+        return $this->render('help.php');
     }
 }

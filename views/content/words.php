@@ -66,7 +66,11 @@ if (empty($lesson_data['words'])) {
     <br>
     <hr>
 
-    <h4>Add a new word to this lesson</h4>
+    <h4>Add a new word to this lesson
+        <a href="<?=Url::toRoute(['content/help'], true)?>">
+            <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+        </a>
+    </h4>
 
     <form action="<?= Url::toRoute(['content/view-lesson'], true) ?>" method="post">
         <input type="hidden" name="<?= Yii::$app->request->csrfParam ?>" value="<?= Yii::$app->request->csrfToken ?>">
