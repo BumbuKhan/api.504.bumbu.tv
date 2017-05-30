@@ -1,0 +1,18 @@
+.outlined {
+    outline: 1px red dotted;
+}
+
+.lesson__filled-up {
+    background-color: #65b21d;
+}
+
+.word-examples {
+    padding-left: 15px;
+    list-style-type: lower-alpha;
+    font-size: 12px;
+    color: #666;
+}
+
+.word-examples li{
+    margin-bottom: 5px;
+}
