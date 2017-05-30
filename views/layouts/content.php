@@ -28,7 +28,7 @@ use yii\helpers\Url;
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="<?=Url::base(true)?>/js/circle-progress.min.js"></script>
+    <script src="<?= Url::base(true) ?>/js/circle-progress.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -38,22 +38,26 @@ use yii\helpers\Url;
 <body>
 
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
+    <div class="container">
         <div class="navbar-header">
             <button type="button" class="collapsed navbar-toggle" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-7" aria-expanded="false"><span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
-            <a href="<?=Url::toRoute(['/content'])?>" class="navbar-brand">504 AEW</a></div>
+            <a href="<?= Url::toRoute(['/content']) ?>" class="navbar-brand">504 AEW</a></div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
             <ul class="nav navbar-nav">
-                <li><a href="<?=Url::toRoute(['/content'])?>">Lessons</a></li>
+                <li><a href="<?= Url::toRoute(['/content']) ?>">Lessons</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 <div class="container">
-    <?= $content ?>
+    <div class="row">
+        <div class="col-xs-12 col-lg-6 col-lg-offset-3">
+            <?= $content ?>
+        </div>
+    </div>
 </div>
 </body>
 </html>

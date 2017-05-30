@@ -22,7 +22,7 @@ if ($errors['no_more_place']) { ?>
 <?php
 if (empty($lesson_data['words'])) {
     ?>
-    <div class="alert alert-info" role="alert" style="margin-bottom: 0;">
+    <div class="alert alert-warning" role="alert" style="margin-bottom: 0;">
         There is no word here :-(
     </div>
 <?php } else { ?>
