@@ -47,7 +47,6 @@ use yii\helpers\Url;
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
             <ul class="nav navbar-nav">
                 <li><a href="<?= Url::toRoute(['/content']) ?>">Lessons</a></li>
-                <li><a href="<?= Url::toRoute(['/content/help']) ?>">How to fill up?</a></li>
             </ul>
         </div>
     </div>
